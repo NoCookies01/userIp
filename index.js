@@ -7,7 +7,7 @@ const { getUserIp } = require('./getIp');
 
 app.get('/', (req, res) => {
   var clientIp = getUserIp(req)
-  res.send(`Your IP Address is ${clientIp}.`)
+  res.send(`Your Real IP Address is ${clientIp}.`)
 })
 
 app.listen(port, () => {
